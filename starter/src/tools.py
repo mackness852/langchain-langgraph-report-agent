@@ -64,10 +64,32 @@ class ToolLogger:
 # Refer to README.md Task 4.1 for detailed implementation requirements.
 def create_calculator_tool(logger: ToolLogger):
     """
-    Creates a calculator tool - TO BE IMPLEMENTED
+    Creates a calculator tool
     """
-    # Your implementation here
-    pass
+    @tool 
+    def calculator_tool(
+        expression: str
+    ) -> str:
+        """A calculator tool which supports +, -, *, /, and decimal numbers.
+
+        Args:
+            expression (str): The mathematical expression to evaluate
+
+        Returns:
+            str: An answer to your mathemetical expression
+        """
+        allowed_chars = "1234567890+-*/."
+        safe_expression = "".join(char for char in expression if char in allowed_chars)
+
+        try:
+            result = eval(safe_expression)
+            logger.log_tool_use("calculator_tool", {"expression": expression}, result)
+        except Exception as e:
+            logger.log_tool_use("calculator_tool", {"expression": expression}, f"Failed to evaluate this expression: {e}")
+            raise Exception(f"Evaluation for {expression} failed", e)
+        
+        return result
+    return calculator_tool
 
 
 def create_document_search_tool(retriever, logger: ToolLogger):

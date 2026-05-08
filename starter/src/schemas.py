@@ -53,7 +53,7 @@ class UpdateMemoryResponse(BaseModel):
 # This schema should include fields for intent_type, confidence, and reasoning.
 # Refer to README.md Task 1.2 for detailed field requirements.
 class UserIntent(BaseModel):
-    """User intent classification - TO BE IMPLEMENTED"""
+    """User intent classification"""
     intent_type: str = Field(description='The classified intent ("qa", "summarization", "calculation", or "unknown")')
     confidence: float = Field(description="Confidence score between 0 and 1 (float)")
     reasoning: str = Field(description="Explanation for the classification (string)")
