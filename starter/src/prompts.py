@@ -22,6 +22,20 @@ Recent Conversation History:
 {conversation_history}
 
 Analyze the user's request and classify their intent with a confidence score and brief reasoning.
+
+Examples of classification:
+- “What was the total claim value in claim CLM-001?”: calculation
+- "What is the sum total of all invoices?": calculation
+
+- “Summarize the key points of the claim CLM-001”: summarization
+- "Summarise the contents of service agreement CON-001": summarization
+
+- “What is the most recent invoice?”: qa
+- "Are there any concerning clauses in the service agreement CON-001?": qa
+
+Examples of confidence rating:
+- 0: You are not very confident. The user request may contain ambiguous language. You would be guessing, so it would be appropriate to default to qa classification and ask for clarity.
+- 1: You are totally confident with what the user was requesting and can classify the request in the categories above appropriately.
 """
     )
 
