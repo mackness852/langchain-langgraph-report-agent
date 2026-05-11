@@ -1,0 +1,1301 @@
+{
+  "session_id": "b0adc8aa-f652-46b4-8809-0d277059e212",
+  "user_id": "Rob",
+  "conversation_history": [
+    {
+      "user_input": "What's the total amount in invoice INV-001?",
+      "messages": [
+        {
+          "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations no matter how simple",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "54aeac96-0c15-4e2e-bd74-400df0cde426"
+        },
+        {
+          "content": "What's the total amount in invoice INV-001?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "161bcde4-d772-4b96-a89a-93839ee0d221"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 17,
+              "prompt_tokens": 666,
+              "total_tokens": 683,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_395c203642",
+            "id": "chatcmpl-DeH61Uz6NrgMey2R6YhWylHOzlfal",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1656-35ee-7303-b03f-401fcb16b0ae-0",
+          "tool_calls": [
+            {
+              "name": "document_reader",
+              "args": {
+                "doc_id": "INV-001"
+              },
+              "id": "call_lloisrGtyGjiYGbLilPQXBIF",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 666,
+            "output_tokens": 17,
+            "total_tokens": 683,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Document INV-001:\n\n\n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n                - Software Development: $12,500\n                - Support & Maintenance: $2,500\n\n                Subtotal: $20,000\n                Tax (10%): $2,000\n\n                Payment Terms: Net 30 days\n                ",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_reader",
+          "id": "7552f102-41de-4cde-a0f9-84e71093c2d6",
+          "tool_call_id": "call_lloisrGtyGjiYGbLilPQXBIF",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 20,
+              "prompt_tokens": 786,
+              "total_tokens": 806,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_395c203642",
+            "id": "chatcmpl-DeH630LdcdUL7xX3OqyaMFUBPSOO5",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1656-3bb8-74a3-8628-0939ea271f95-0",
+          "tool_calls": [
+            {
+              "name": "calculator_tool",
+              "args": {
+                "expression": "20000 + 2000"
+              },
+              "id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 786,
+            "output_tokens": 20,
+            "total_tokens": 806,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "22000",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "calculator_tool",
+          "id": "c1785404-011a-40ac-95d0-7e315979b391",
+          "tool_call_id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "The total amount in invoice INV-001 is $22,000.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 15,
+              "prompt_tokens": 816,
+              "total_tokens": 831,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_395c203642",
+            "id": "chatcmpl-DeH64Ls4SfTwR1y5tGPf2qLkYhgA0",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1656-40ea-79c3-beb2-89bb77a41f34-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 816,
+            "output_tokens": 15,
+            "total_tokens": 831,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "calculation",
+        "confidence": 0.95,
+        "reasoning": "The user is asking for the total amount in a specific invoice, which implies a need to perform a calculation or retrieve a numerical value from the document. This aligns with the 'calculation' intent category."
+      },
+      "next_step": "end",
+      "conversation_summary": "The user asked for the total amount in invoice INV-001. The invoice included charges for consulting services, software development, and support & maintenance, totaling $20,000, with an additional 10% tax of $2,000. The total amount calculated was $22,000.",
+      "active_documents": [
+        "INV-001"
+      ],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations no matter how simple",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "54aeac96-0c15-4e2e-bd74-400df0cde426"
+          },
+          {
+            "content": "What's the total amount in invoice INV-001?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "161bcde4-d772-4b96-a89a-93839ee0d221"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 17,
+                "prompt_tokens": 666,
+                "total_tokens": 683,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_395c203642",
+              "id": "chatcmpl-DeH61Uz6NrgMey2R6YhWylHOzlfal",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1656-35ee-7303-b03f-401fcb16b0ae-0",
+            "tool_calls": [
+              {
+                "name": "document_reader",
+                "args": {
+                  "doc_id": "INV-001"
+                },
+                "id": "call_lloisrGtyGjiYGbLilPQXBIF",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 666,
+              "output_tokens": 17,
+              "total_tokens": 683,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Document INV-001:\n\n\n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n                - Software Development: $12,500\n                - Support & Maintenance: $2,500\n\n                Subtotal: $20,000\n                Tax (10%): $2,000\n\n                Payment Terms: Net 30 days\n                ",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_reader",
+            "id": "7552f102-41de-4cde-a0f9-84e71093c2d6",
+            "tool_call_id": "call_lloisrGtyGjiYGbLilPQXBIF",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 20,
+                "prompt_tokens": 786,
+                "total_tokens": 806,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_395c203642",
+              "id": "chatcmpl-DeH630LdcdUL7xX3OqyaMFUBPSOO5",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1656-3bb8-74a3-8628-0939ea271f95-0",
+            "tool_calls": [
+              {
+                "name": "calculator_tool",
+                "args": {
+                  "expression": "20000 + 2000"
+                },
+                "id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 786,
+              "output_tokens": 20,
+              "total_tokens": 806,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "22000",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "calculator_tool",
+            "id": "c1785404-011a-40ac-95d0-7e315979b391",
+            "tool_call_id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "The total amount in invoice INV-001 is $22,000.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 15,
+                "prompt_tokens": 816,
+                "total_tokens": 831,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_395c203642",
+              "id": "chatcmpl-DeH64Ls4SfTwR1y5tGPf2qLkYhgA0",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1656-40ea-79c3-beb2-89bb77a41f34-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 816,
+              "output_tokens": 15,
+              "total_tokens": 831,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "expression": "20000 + 2000",
+          "result": 22000.0,
+          "explanation": "The invoice lists a subtotal of $20,000 and a tax of $2,000. To find the total amount, we add the subtotal and the tax: $20,000 + $2,000 = $22,000.",
+          "units": "USD",
+          "timestamp": "2024-01-15T00:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_reader",
+        "calculator_tool"
+      ],
+      "session_id": "b0adc8aa-f652-46b4-8809-0d277059e212",
+      "user_id": "Rob",
+      "actions_taken": [
+        "classify_intent",
+        "calculation_agent"
+      ]
+    },
+    {
+      "user_input": "Summarize all contracts",
+      "messages": [
+        {
+          "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations no matter how simple",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "54aeac96-0c15-4e2e-bd74-400df0cde426"
+        },
+        {
+          "content": "What's the total amount in invoice INV-001?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "161bcde4-d772-4b96-a89a-93839ee0d221"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 17,
+              "prompt_tokens": 666,
+              "total_tokens": 683,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_395c203642",
+            "id": "chatcmpl-DeH61Uz6NrgMey2R6YhWylHOzlfal",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1656-35ee-7303-b03f-401fcb16b0ae-0",
+          "tool_calls": [
+            {
+              "name": "document_reader",
+              "args": {
+                "doc_id": "INV-001"
+              },
+              "id": "call_lloisrGtyGjiYGbLilPQXBIF",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 666,
+            "output_tokens": 17,
+            "total_tokens": 683,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Document INV-001:\n\n\n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n                - Software Development: $12,500\n                - Support & Maintenance: $2,500\n\n                Subtotal: $20,000\n                Tax (10%): $2,000\n\n                Payment Terms: Net 30 days\n                ",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_reader",
+          "id": "7552f102-41de-4cde-a0f9-84e71093c2d6",
+          "tool_call_id": "call_lloisrGtyGjiYGbLilPQXBIF",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 20,
+              "prompt_tokens": 786,
+              "total_tokens": 806,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_395c203642",
+            "id": "chatcmpl-DeH630LdcdUL7xX3OqyaMFUBPSOO5",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1656-3bb8-74a3-8628-0939ea271f95-0",
+          "tool_calls": [
+            {
+              "name": "calculator_tool",
+              "args": {
+                "expression": "20000 + 2000"
+              },
+              "id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 786,
+            "output_tokens": 20,
+            "total_tokens": 806,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "22000",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "calculator_tool",
+          "id": "c1785404-011a-40ac-95d0-7e315979b391",
+          "tool_call_id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "The total amount in invoice INV-001 is $22,000.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 15,
+              "prompt_tokens": 816,
+              "total_tokens": 831,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_395c203642",
+            "id": "chatcmpl-DeH64Ls4SfTwR1y5tGPf2qLkYhgA0",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1656-40ea-79c3-beb2-89bb77a41f34-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 816,
+            "output_tokens": 15,
+            "total_tokens": 831,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "You are an expert document summarizer specializing in financial and healthcare documents.\n\nYour approach:\n- Extract key information and main points\n- Organize summaries logically\n- Highlight important numbers, dates, and parties\n- Keep summaries concise but comprehensive\n\nGuidelines:\n1. First search for and read the relevant documents\n2. Structure summaries with clear sections\n3. Include document IDs in your summary\n4. Focus on actionable information\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "8181bd04-e38d-4ba3-8a43-e30509ead956"
+        },
+        {
+          "content": "Summarize all contracts",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "63af966d-cc37-4710-9a9c-66d58ef81de4"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 24,
+              "prompt_tokens": 932,
+              "total_tokens": 956,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeH73nQPPuhgPRTktB1ILqJdKC5iB",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1657-2fa4-7162-9037-898bad344f11-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "contracts",
+                "search_type": "type",
+                "doc_type": "contract"
+              },
+              "id": "call_uP4n1D6AQlXNTAvXZawoRtMP",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 932,
+            "output_tokens": 24,
+            "total_tokens": 956,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Found 1 document(s):\n\nDocument 1 (ID: CON-001):\nTitle: Service Agreement\nType: contract\nAmount: $180,000.00\nRelevance Score: 1.00\nPreview: \n                SERVICE AGREEMENT\n\n                This Service Agreement is entered into on January 1, 2024, between:\n                - Provider: DocDacity Solutions Inc.\n                - Client: H...\n--------------------------------------------------\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "56c1e084-4363-4fe4-8d1e-ea137e206617",
+          "tool_call_id": "call_uP4n1D6AQlXNTAvXZawoRtMP",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 17,
+              "prompt_tokens": 1051,
+              "total_tokens": 1068,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeH74hGGCMy35yPiuqcilEWp59H6q",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1657-3482-7592-8c33-21de079db7cb-0",
+          "tool_calls": [
+            {
+              "name": "document_reader",
+              "args": {
+                "doc_id": "CON-001"
+              },
+              "id": "call_uEQ059e3gs2j22rNhY6gSRzP",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1051,
+            "output_tokens": 17,
+            "total_tokens": 1068,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Document CON-001:\nAmount: $180,000.00\n\n\n                SERVICE AGREEMENT\n\n                This Service Agreement is entered into on January 1, 2024, between:\n                - Provider: DocDacity Solutions Inc.\n                - Client: Healthcare Partners LLC\n\n                Services:\n                1. Document Processing Platform Access\n                2. 24/7 Technical Support\n                3. Monthly Data Analytics Reports\n                4. Compliance Monitoring\n\n                Duration: 12 months\n                Monthly Fee: $15,000\n                Total Contract Value: $180,000\n\n                Termination: Either party may terminate with 60 days written notice.\n                ",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_reader",
+          "id": "11287d6c-dd1c-4a82-97a7-40eb8b54ce44",
+          "tool_call_id": "call_uEQ059e3gs2j22rNhY6gSRzP",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "### Summary of Contract Document (ID: CON-001)\n\n**Title:** Service Agreement  \n**Date:** January 1, 2024  \n**Parties Involved:**  \n- **Provider:** DocDacity Solutions Inc.  \n- **Client:** Healthcare Partners LLC  \n\n**Services Provided:**  \n1. Document Processing Platform Access  \n2. 24/7 Technical Support  \n3. Monthly Data Analytics Reports  \n4. Compliance Monitoring  \n\n**Financial Details:**  \n- **Monthly Fee:** $15,000  \n- **Total Contract Value:** $180,000  \n\n**Duration:** 12 months  \n\n**Termination Clause:** Either party may terminate the agreement with 60 days written notice.  \n\nThis contract outlines the services and financial terms agreed upon between DocDacity Solutions Inc. and Healthcare Partners LLC for a one-year period.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 167,
+              "prompt_tokens": 1212,
+              "total_tokens": 1379,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1024
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeH76326hT6PjI1TwsR0fOg8xRGGn",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1657-39b5-7ee2-81db-90f0b292ebd5-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1212,
+            "output_tokens": 167,
+            "total_tokens": 1379,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1024
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "summarization",
+        "confidence": 0.95,
+        "reasoning": "The user explicitly requested a summary of all contracts, which aligns with the 'summarization' intent. There is no indication of a need for calculations or specific questions about the documents, making 'qa' and 'calculation' less relevant. The request is clear, reducing the likelihood of 'unknown' being the correct classification."
+      },
+      "next_step": "end",
+      "conversation_summary": "The conversation involved calculating the total amount for invoice INV-001, which included consulting services, software development, and support & maintenance, totaling $20,000 with an additional 10% tax of $2,000, resulting in a total of $22,000. Additionally, a service agreement contract (CON-001) was summarized, detailing a 12-month agreement between DocDacity Solutions Inc. and Healthcare Partners LLC for document processing services, with a total contract value of $180,000 and a monthly fee of $15,000.",
+      "active_documents": [
+        "INV-001",
+        "CON-001"
+      ],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are an expert document summarizer specializing in financial and healthcare documents.\n\nYour approach:\n- Extract key information and main points\n- Organize summaries logically\n- Highlight important numbers, dates, and parties\n- Keep summaries concise but comprehensive\n\nGuidelines:\n1. First search for and read the relevant documents\n2. Structure summaries with clear sections\n3. Include document IDs in your summary\n4. Focus on actionable information\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "8181bd04-e38d-4ba3-8a43-e30509ead956"
+          },
+          {
+            "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations no matter how simple",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "54aeac96-0c15-4e2e-bd74-400df0cde426"
+          },
+          {
+            "content": "What's the total amount in invoice INV-001?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "161bcde4-d772-4b96-a89a-93839ee0d221"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 17,
+                "prompt_tokens": 666,
+                "total_tokens": 683,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_395c203642",
+              "id": "chatcmpl-DeH61Uz6NrgMey2R6YhWylHOzlfal",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1656-35ee-7303-b03f-401fcb16b0ae-0",
+            "tool_calls": [
+              {
+                "name": "document_reader",
+                "args": {
+                  "doc_id": "INV-001"
+                },
+                "id": "call_lloisrGtyGjiYGbLilPQXBIF",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 666,
+              "output_tokens": 17,
+              "total_tokens": 683,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Document INV-001:\n\n\n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n                - Software Development: $12,500\n                - Support & Maintenance: $2,500\n\n                Subtotal: $20,000\n                Tax (10%): $2,000\n\n                Payment Terms: Net 30 days\n                ",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_reader",
+            "id": "7552f102-41de-4cde-a0f9-84e71093c2d6",
+            "tool_call_id": "call_lloisrGtyGjiYGbLilPQXBIF",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 20,
+                "prompt_tokens": 786,
+                "total_tokens": 806,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_395c203642",
+              "id": "chatcmpl-DeH630LdcdUL7xX3OqyaMFUBPSOO5",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1656-3bb8-74a3-8628-0939ea271f95-0",
+            "tool_calls": [
+              {
+                "name": "calculator_tool",
+                "args": {
+                  "expression": "20000 + 2000"
+                },
+                "id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 786,
+              "output_tokens": 20,
+              "total_tokens": 806,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "22000",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "calculator_tool",
+            "id": "c1785404-011a-40ac-95d0-7e315979b391",
+            "tool_call_id": "call_eJIoKTQanEqVsS1H5Lmm2LEK",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "The total amount in invoice INV-001 is $22,000.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 15,
+                "prompt_tokens": 816,
+                "total_tokens": 831,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_395c203642",
+              "id": "chatcmpl-DeH64Ls4SfTwR1y5tGPf2qLkYhgA0",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1656-40ea-79c3-beb2-89bb77a41f34-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 816,
+              "output_tokens": 15,
+              "total_tokens": 831,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Summarize all contracts",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "63af966d-cc37-4710-9a9c-66d58ef81de4"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 24,
+                "prompt_tokens": 932,
+                "total_tokens": 956,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeH73nQPPuhgPRTktB1ILqJdKC5iB",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1657-2fa4-7162-9037-898bad344f11-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "contracts",
+                  "search_type": "type",
+                  "doc_type": "contract"
+                },
+                "id": "call_uP4n1D6AQlXNTAvXZawoRtMP",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 932,
+              "output_tokens": 24,
+              "total_tokens": 956,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Found 1 document(s):\n\nDocument 1 (ID: CON-001):\nTitle: Service Agreement\nType: contract\nAmount: $180,000.00\nRelevance Score: 1.00\nPreview: \n                SERVICE AGREEMENT\n\n                This Service Agreement is entered into on January 1, 2024, between:\n                - Provider: DocDacity Solutions Inc.\n                - Client: H...\n--------------------------------------------------\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "56c1e084-4363-4fe4-8d1e-ea137e206617",
+            "tool_call_id": "call_uP4n1D6AQlXNTAvXZawoRtMP",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 17,
+                "prompt_tokens": 1051,
+                "total_tokens": 1068,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeH74hGGCMy35yPiuqcilEWp59H6q",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1657-3482-7592-8c33-21de079db7cb-0",
+            "tool_calls": [
+              {
+                "name": "document_reader",
+                "args": {
+                  "doc_id": "CON-001"
+                },
+                "id": "call_uEQ059e3gs2j22rNhY6gSRzP",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1051,
+              "output_tokens": 17,
+              "total_tokens": 1068,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Document CON-001:\nAmount: $180,000.00\n\n\n                SERVICE AGREEMENT\n\n                This Service Agreement is entered into on January 1, 2024, between:\n                - Provider: DocDacity Solutions Inc.\n                - Client: Healthcare Partners LLC\n\n                Services:\n                1. Document Processing Platform Access\n                2. 24/7 Technical Support\n                3. Monthly Data Analytics Reports\n                4. Compliance Monitoring\n\n                Duration: 12 months\n                Monthly Fee: $15,000\n                Total Contract Value: $180,000\n\n                Termination: Either party may terminate with 60 days written notice.\n                ",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_reader",
+            "id": "11287d6c-dd1c-4a82-97a7-40eb8b54ce44",
+            "tool_call_id": "call_uEQ059e3gs2j22rNhY6gSRzP",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "### Summary of Contract Document (ID: CON-001)\n\n**Title:** Service Agreement  \n**Date:** January 1, 2024  \n**Parties Involved:**  \n- **Provider:** DocDacity Solutions Inc.  \n- **Client:** Healthcare Partners LLC  \n\n**Services Provided:**  \n1. Document Processing Platform Access  \n2. 24/7 Technical Support  \n3. Monthly Data Analytics Reports  \n4. Compliance Monitoring  \n\n**Financial Details:**  \n- **Monthly Fee:** $15,000  \n- **Total Contract Value:** $180,000  \n\n**Duration:** 12 months  \n\n**Termination Clause:** Either party may terminate the agreement with 60 days written notice.  \n\nThis contract outlines the services and financial terms agreed upon between DocDacity Solutions Inc. and Healthcare Partners LLC for a one-year period.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 167,
+                "prompt_tokens": 1212,
+                "total_tokens": 1379,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1024
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeH76326hT6PjI1TwsR0fOg8xRGGn",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1657-39b5-7ee2-81db-90f0b292ebd5-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1212,
+              "output_tokens": 167,
+              "total_tokens": 1379,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1024
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "original_length": 1000,
+          "summary": "### Summary of Contract Document (ID: CON-001)\n\n**Title:** Service Agreement  \n**Date:** January 1, 2024  \n**Parties Involved:**  \n- **Provider:** DocDacity Solutions Inc.  \n- **Client:** Healthcare Partners LLC  \n\n**Services Provided:**  \n1. Document Processing Platform Access  \n2. 24/7 Technical Support  \n3. Monthly Data Analytics Reports  \n4. Compliance Monitoring  \n\n**Financial Details:**  \n- **Monthly Fee:** $15,000  \n- **Total Contract Value:** $180,000  \n\n**Duration:** 12 months  \n\n**Termination Clause:** Either party may terminate the agreement with 60 days written notice.  \n\nThis contract outlines the services and financial terms agreed upon between DocDacity Solutions Inc. and Healthcare Partners LLC for a one-year period.",
+          "key_points": [
+            "Service Agreement between DocDacity Solutions Inc. and Healthcare Partners LLC",
+            "Services include platform access, technical support, data analytics, and compliance monitoring",
+            "Contract duration is 12 months with a monthly fee of $15,000",
+            "Total contract value is $180,000",
+            "Termination requires 60 days written notice"
+          ],
+          "document_ids": [
+            "CON-001"
+          ],
+          "timestamp": "2024-01-15T12:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_reader",
+        "calculator_tool",
+        "document_search",
+        "document_reader"
+      ],
+      "session_id": "b0adc8aa-f652-46b4-8809-0d277059e212",
+      "user_id": "Rob",
+      "actions_taken": [
+        "classify_intent",
+        "calculation_agent",
+        "classify_intent",
+        "summarization_agent"
+      ]
+    }
+  ],
+  "document_context": [
+    "CON-001",
+    "INV-001"
+  ],
+  "created_at": "2026-05-11T10:20:00.958352",
+  "last_updated": "2026-05-11T10:21:25.523826"
+}

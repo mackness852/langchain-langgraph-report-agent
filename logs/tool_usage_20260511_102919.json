@@ -1,0 +1,56 @@
+[
+  {
+    "timestamp": "2026-05-11T10:29:33.691808",
+    "tool_name": "document_search",
+    "input": {
+      "query": "invoices",
+      "search_type": "type",
+      "doc_type": "invoice",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-05-11T10:29:35.540263",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:29:35.540796",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-003"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:29:35.541515",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-002"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:29:36.876971",
+    "tool_name": "calculator_tool",
+    "input": {
+      "expression": "20000 + 69300 + 214500"
+    },
+    "output": "303800"
+  },
+  {
+    "timestamp": "2026-05-11T10:30:47.595156",
+    "tool_name": "calculator_tool",
+    "input": {
+      "expression": "303800 % 5"
+    },
+    "output": "Failed to evaluate this expression: Illegal chars present: %"
+  }
+]

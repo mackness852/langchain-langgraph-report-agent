@@ -1,0 +1,48 @@
+[
+  {
+    "timestamp": "2026-05-11T10:27:00.591588",
+    "tool_name": "document_search",
+    "input": {
+      "query": "invoices",
+      "search_type": "type",
+      "doc_type": "invoice",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-05-11T10:27:02.393922",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:27:02.394289",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-002"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:27:02.394596",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-003"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:27:03.760109",
+    "tool_name": "calculator_tool",
+    "input": {
+      "expression": "20000 + 69300 + 214500"
+    },
+    "output": "Failed to evaluate this expression: Illegal chars present:     "
+  }
+]

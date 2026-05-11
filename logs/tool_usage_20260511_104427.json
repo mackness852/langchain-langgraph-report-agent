@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2026-05-11T10:44:42.731969",
+    "tool_name": "document_statistics",
+    "input": {},
+    "output": "{'stats': {'total_documents': 5, 'documents_with_amounts': 4, 'total_amount': 466250.0, 'average_amount': 116562.5, 'document_types': {'invoice': 3, 'contract': 1, 'claim': 1}, 'min_amount': 2450.0, 'max_amount': 214500.0}}"
+  },
+  {
+    "timestamp": "2026-05-11T10:44:43.924300",
+    "tool_name": "document_search",
+    "input": {
+      "query": "all documents",
+      "search_type": "all",
+      "doc_type": null,
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 0}"
+  },
+  {
+    "timestamp": "2026-05-11T10:44:46.689989",
+    "tool_name": "document_search",
+    "input": {
+      "query": "all documents",
+      "search_type": "all",
+      "doc_type": null,
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 0}"
+  },
+  {
+    "timestamp": "2026-05-11T10:45:21.404720",
+    "tool_name": "document_search",
+    "input": {
+      "query": "invoices",
+      "search_type": "type",
+      "doc_type": "invoice",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-05-11T10:45:53.429610",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-004"
+    },
+    "output": "{'found': False}"
+  },
+  {
+    "timestamp": "2026-05-11T10:53:30.055775",
+    "tool_name": "document_search",
+    "input": {
+      "query": "invoices under $100",
+      "search_type": "type",
+      "doc_type": "invoice",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": "under",
+      "amount": 100.0
+    },
+    "output": "{'results_count': 0}"
+  }
+]

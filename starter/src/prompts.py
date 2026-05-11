@@ -70,7 +70,7 @@ Your approach:
 3. Use the calculator tool to perform the calculation
 
 Guidelines: 
-1. Make sure to use the calculator tool for ALL calculations no matter how simple"""
+1. Make sure to use the calculator tool for ALL calculations. This includes trivial operations such as add, subtract, multiply and divide."""
 
 
 # TODO: Finish the function to return the correct prompt based on intent type

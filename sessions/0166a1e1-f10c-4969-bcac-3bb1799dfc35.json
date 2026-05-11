@@ -1,0 +1,3935 @@
+{
+  "session_id": "0166a1e1-f10c-4969-bcac-3bb1799dfc35",
+  "user_id": "Rob",
+  "conversation_history": [
+    {
+      "user_input": "List all document names",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+        },
+        {
+          "content": "List all document names",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 676,
+              "total_tokens": 686,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 676,
+            "output_tokens": 10,
+            "total_tokens": 686,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+          "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 20,
+              "prompt_tokens": 788,
+              "total_tokens": 808,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 788,
+            "output_tokens": 20,
+            "total_tokens": 808,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+          "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 45,
+              "prompt_tokens": 824,
+              "total_tokens": 869,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 824,
+            "output_tokens": 45,
+            "total_tokens": 869,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+          "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 42,
+              "prompt_tokens": 888,
+              "total_tokens": 930,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 888,
+            "output_tokens": 42,
+            "total_tokens": 930,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "qa",
+        "confidence": 0.85,
+        "reasoning": "The user is asking for a list of document names, which is a straightforward request for information about documents. This aligns with the 'qa' category as it involves querying document-related information without requiring any calculations or summarization."
+      },
+      "next_step": "end",
+      "conversation_summary": "The user requested a list of all document names, but there was an issue retrieving the document names from the database. The system attempted to search for all documents twice but was unable to find any matching the search criteria. The issue might be technical, and the user was advised to try again later.",
+      "active_documents": [],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+          },
+          {
+            "content": "List all document names",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 676,
+                "total_tokens": 686,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 676,
+              "output_tokens": 10,
+              "total_tokens": 686,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+            "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 20,
+                "prompt_tokens": 788,
+                "total_tokens": 808,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 788,
+              "output_tokens": 20,
+              "total_tokens": 808,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+            "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 45,
+                "prompt_tokens": 824,
+                "total_tokens": 869,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 824,
+              "output_tokens": 45,
+              "total_tokens": 869,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+            "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 42,
+                "prompt_tokens": 888,
+                "total_tokens": 930,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 888,
+              "output_tokens": 42,
+              "total_tokens": 930,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "question": "List all document names",
+          "answer": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+          "sources": [],
+          "confidence": 0.2,
+          "timestamp": "2023-10-06T12:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics",
+        "document_search",
+        "document_search"
+      ],
+      "session_id": "0166a1e1-f10c-4969-bcac-3bb1799dfc35",
+      "user_id": "Rob",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent"
+      ]
+    },
+    {
+      "user_input": "List the titles of each invoice",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+        },
+        {
+          "content": "List all document names",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 676,
+              "total_tokens": 686,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 676,
+            "output_tokens": 10,
+            "total_tokens": 686,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+          "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 20,
+              "prompt_tokens": 788,
+              "total_tokens": 808,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 788,
+            "output_tokens": 20,
+            "total_tokens": 808,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+          "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 45,
+              "prompt_tokens": 824,
+              "total_tokens": 869,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 824,
+            "output_tokens": 45,
+            "total_tokens": 869,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+          "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 42,
+              "prompt_tokens": 888,
+              "total_tokens": 930,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 888,
+            "output_tokens": 42,
+            "total_tokens": 930,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "5f0c7b24-33c3-4f5b-8061-22ae1be04762"
+        },
+        {
+          "content": "List the titles of each invoice",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "3f0ffe1d-4c0e-4643-b114-92ca95647b08"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 25,
+              "prompt_tokens": 1046,
+              "total_tokens": 1071,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHUOOTtP1xHKICFfGc0yIXUWfmvz",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-4237-7362-8a03-531fecb60a5b-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "invoices",
+                "search_type": "type",
+                "doc_type": "invoice"
+              },
+              "id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1046,
+            "output_tokens": 25,
+            "total_tokens": 1071,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Found 3 document(s):\n\nDocument 1 (ID: INV-001):\nTitle: Invoice #12345\nType: invoice\nRelevance Score: 1.00\nPreview: \n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n            ...\n--------------------------------------------------\nDocument 2 (ID: INV-002):\nTitle: Invoice #12346\nType: invoice\nAmount: $69,300.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12346\n                Date: 2024-02-20\n                Client: TechStart Inc.\n\n                Products:\n                - Enterprise License (Annual): $50,000\n              ...\n--------------------------------------------------\nDocument 3 (ID: INV-003):\nTitle: Invoice #12347\nType: invoice\nAmount: $214,500.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12347\n                Date: 2024-03-01\n                Client: Global Corp\n\n                Services:\n                - Annual Subscription: $120,000\n                - Premiu...\n--------------------------------------------------\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "5d3dbee1-892d-41b9-b172-f81ca5710799",
+          "tool_call_id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "Here are the titles of each invoice:\n\n1. **Invoice #12345** - Document ID: INV-001\n2. **Invoice #12346** - Document ID: INV-002\n3. **Invoice #12347** - Document ID: INV-003\n\nIf you need more details about any specific invoice, feel free to ask!",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 72,
+              "prompt_tokens": 1331,
+              "total_tokens": 1403,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1024
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHUPm5nKuArpBLUkTPVnVoKUeeFh",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-48fd-7c92-9546-6aa6db92cfe2-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1331,
+            "output_tokens": 72,
+            "total_tokens": 1403,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1024
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "qa",
+        "confidence": 0.95,
+        "reasoning": "The user is asking for a list of titles from a specific type of document (invoices), which aligns with the 'qa' category as it involves querying document content without requiring any calculations or summarization."
+      },
+      "next_step": "end",
+      "conversation_summary": "The user requested a list of all document names, but there was an issue retrieving them initially. Upon retrying, the assistant successfully retrieved the titles of three invoices: Invoice #12345, Invoice #12346, and Invoice #12347, with their respective document IDs: INV-001, INV-002, and INV-003.",
+      "active_documents": [
+        "INV-001",
+        "INV-002",
+        "INV-003"
+      ],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "5f0c7b24-33c3-4f5b-8061-22ae1be04762"
+          },
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+          },
+          {
+            "content": "List all document names",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 676,
+                "total_tokens": 686,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 676,
+              "output_tokens": 10,
+              "total_tokens": 686,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+            "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 20,
+                "prompt_tokens": 788,
+                "total_tokens": 808,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 788,
+              "output_tokens": 20,
+              "total_tokens": 808,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+            "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 45,
+                "prompt_tokens": 824,
+                "total_tokens": 869,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 824,
+              "output_tokens": 45,
+              "total_tokens": 869,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+            "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 42,
+                "prompt_tokens": 888,
+                "total_tokens": 930,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 888,
+              "output_tokens": 42,
+              "total_tokens": 930,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "List the titles of each invoice",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "3f0ffe1d-4c0e-4643-b114-92ca95647b08"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 25,
+                "prompt_tokens": 1046,
+                "total_tokens": 1071,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHUOOTtP1xHKICFfGc0yIXUWfmvz",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-4237-7362-8a03-531fecb60a5b-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "invoices",
+                  "search_type": "type",
+                  "doc_type": "invoice"
+                },
+                "id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1046,
+              "output_tokens": 25,
+              "total_tokens": 1071,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Found 3 document(s):\n\nDocument 1 (ID: INV-001):\nTitle: Invoice #12345\nType: invoice\nRelevance Score: 1.00\nPreview: \n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n            ...\n--------------------------------------------------\nDocument 2 (ID: INV-002):\nTitle: Invoice #12346\nType: invoice\nAmount: $69,300.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12346\n                Date: 2024-02-20\n                Client: TechStart Inc.\n\n                Products:\n                - Enterprise License (Annual): $50,000\n              ...\n--------------------------------------------------\nDocument 3 (ID: INV-003):\nTitle: Invoice #12347\nType: invoice\nAmount: $214,500.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12347\n                Date: 2024-03-01\n                Client: Global Corp\n\n                Services:\n                - Annual Subscription: $120,000\n                - Premiu...\n--------------------------------------------------\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "5d3dbee1-892d-41b9-b172-f81ca5710799",
+            "tool_call_id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "Here are the titles of each invoice:\n\n1. **Invoice #12345** - Document ID: INV-001\n2. **Invoice #12346** - Document ID: INV-002\n3. **Invoice #12347** - Document ID: INV-003\n\nIf you need more details about any specific invoice, feel free to ask!",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 72,
+                "prompt_tokens": 1331,
+                "total_tokens": 1403,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1024
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHUPm5nKuArpBLUkTPVnVoKUeeFh",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-48fd-7c92-9546-6aa6db92cfe2-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1331,
+              "output_tokens": 72,
+              "total_tokens": 1403,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1024
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "question": "List the titles of each invoice",
+          "answer": "Here are the titles of each invoice:\n\n1. **Invoice #12345** - Document ID: INV-001\n2. **Invoice #12346** - Document ID: INV-002\n3. **Invoice #12347** - Document ID: INV-003\n\nIf you need more details about any specific invoice, feel free to ask!",
+          "sources": [
+            "INV-001",
+            "INV-002",
+            "INV-003"
+          ],
+          "confidence": 0.95,
+          "timestamp": "2023-10-06T14:30:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics",
+        "document_search",
+        "document_search",
+        "document_search"
+      ],
+      "session_id": "0166a1e1-f10c-4969-bcac-3bb1799dfc35",
+      "user_id": "Rob",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent",
+        "classify_intent",
+        "qa_agent"
+      ]
+    },
+    {
+      "user_input": "What is the total for INV-004?",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+        },
+        {
+          "content": "List all document names",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 676,
+              "total_tokens": 686,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 676,
+            "output_tokens": 10,
+            "total_tokens": 686,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+          "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 20,
+              "prompt_tokens": 788,
+              "total_tokens": 808,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 788,
+            "output_tokens": 20,
+            "total_tokens": 808,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+          "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 45,
+              "prompt_tokens": 824,
+              "total_tokens": 869,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 824,
+            "output_tokens": 45,
+            "total_tokens": 869,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+          "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 42,
+              "prompt_tokens": 888,
+              "total_tokens": 930,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 888,
+            "output_tokens": 42,
+            "total_tokens": 930,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "5f0c7b24-33c3-4f5b-8061-22ae1be04762"
+        },
+        {
+          "content": "List the titles of each invoice",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "3f0ffe1d-4c0e-4643-b114-92ca95647b08"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 25,
+              "prompt_tokens": 1046,
+              "total_tokens": 1071,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHUOOTtP1xHKICFfGc0yIXUWfmvz",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-4237-7362-8a03-531fecb60a5b-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "invoices",
+                "search_type": "type",
+                "doc_type": "invoice"
+              },
+              "id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1046,
+            "output_tokens": 25,
+            "total_tokens": 1071,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Found 3 document(s):\n\nDocument 1 (ID: INV-001):\nTitle: Invoice #12345\nType: invoice\nRelevance Score: 1.00\nPreview: \n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n            ...\n--------------------------------------------------\nDocument 2 (ID: INV-002):\nTitle: Invoice #12346\nType: invoice\nAmount: $69,300.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12346\n                Date: 2024-02-20\n                Client: TechStart Inc.\n\n                Products:\n                - Enterprise License (Annual): $50,000\n              ...\n--------------------------------------------------\nDocument 3 (ID: INV-003):\nTitle: Invoice #12347\nType: invoice\nAmount: $214,500.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12347\n                Date: 2024-03-01\n                Client: Global Corp\n\n                Services:\n                - Annual Subscription: $120,000\n                - Premiu...\n--------------------------------------------------\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "5d3dbee1-892d-41b9-b172-f81ca5710799",
+          "tool_call_id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "Here are the titles of each invoice:\n\n1. **Invoice #12345** - Document ID: INV-001\n2. **Invoice #12346** - Document ID: INV-002\n3. **Invoice #12347** - Document ID: INV-003\n\nIf you need more details about any specific invoice, feel free to ask!",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 72,
+              "prompt_tokens": 1331,
+              "total_tokens": 1403,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1024
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHUPm5nKuArpBLUkTPVnVoKUeeFh",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-48fd-7c92-9546-6aa6db92cfe2-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1331,
+            "output_tokens": 72,
+            "total_tokens": 1403,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1024
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations. This includes trivial operations such as add, subtract, multiply and divide.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "1acd022e-9b82-4779-9e4c-a3f42195518e"
+        },
+        {
+          "content": "What is the total for INV-004?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "2d927a8b-522f-4052-ba22-8244aa9b23e6"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 17,
+              "prompt_tokens": 1516,
+              "total_tokens": 1533,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_d9a8f17212",
+            "id": "chatcmpl-DeHUuZ8L0WeaZmR1ipcQoxs3GtAPE",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-c16b-7b72-93da-b5a88d5b304d-0",
+          "tool_calls": [
+            {
+              "name": "document_reader",
+              "args": {
+                "doc_id": "INV-004"
+              },
+              "id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1516,
+            "output_tokens": 17,
+            "total_tokens": 1533,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Document with ID INV-004 not found.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_reader",
+          "id": "99481978-eb76-4ffa-9993-46147a59f96a",
+          "tool_call_id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "It seems there is no document with the ID \"INV-004\" in the system. Please check the ID and try again, or let me know if there's anything else I can assist you with.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 41,
+              "prompt_tokens": 1550,
+              "total_tokens": 1591,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1408
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_d9a8f17212",
+            "id": "chatcmpl-DeHUvfM09SWVyvek75cilUMaKfQXW",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-c616-7222-809a-03da23c5e40b-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1550,
+            "output_tokens": 41,
+            "total_tokens": 1591,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1408
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "calculation",
+        "confidence": 0.95,
+        "reasoning": "The user is asking for the total amount associated with a specific invoice (INV-004). This request involves retrieving and possibly calculating the total amount from the document, which falls under the 'calculation' category."
+      },
+      "next_step": "end",
+      "conversation_summary": "The user requested the titles of all invoices, and I provided the titles and document IDs for three invoices: Invoice #12345 (ID: INV-001), Invoice #12346 (ID: INV-002), and Invoice #12347 (ID: INV-003). The user then asked for the total of an invoice with ID INV-004, but no such document was found in the system.",
+      "active_documents": [
+        "INV-001",
+        "INV-002",
+        "INV-003"
+      ],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations. This includes trivial operations such as add, subtract, multiply and divide.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "1acd022e-9b82-4779-9e4c-a3f42195518e"
+          },
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+          },
+          {
+            "content": "List all document names",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 676,
+                "total_tokens": 686,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 676,
+              "output_tokens": 10,
+              "total_tokens": 686,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+            "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 20,
+                "prompt_tokens": 788,
+                "total_tokens": 808,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 788,
+              "output_tokens": 20,
+              "total_tokens": 808,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+            "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 45,
+                "prompt_tokens": 824,
+                "total_tokens": 869,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 824,
+              "output_tokens": 45,
+              "total_tokens": 869,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+            "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 42,
+                "prompt_tokens": 888,
+                "total_tokens": 930,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 888,
+              "output_tokens": 42,
+              "total_tokens": 930,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "5f0c7b24-33c3-4f5b-8061-22ae1be04762"
+          },
+          {
+            "content": "List the titles of each invoice",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "3f0ffe1d-4c0e-4643-b114-92ca95647b08"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 25,
+                "prompt_tokens": 1046,
+                "total_tokens": 1071,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHUOOTtP1xHKICFfGc0yIXUWfmvz",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-4237-7362-8a03-531fecb60a5b-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "invoices",
+                  "search_type": "type",
+                  "doc_type": "invoice"
+                },
+                "id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1046,
+              "output_tokens": 25,
+              "total_tokens": 1071,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Found 3 document(s):\n\nDocument 1 (ID: INV-001):\nTitle: Invoice #12345\nType: invoice\nRelevance Score: 1.00\nPreview: \n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n            ...\n--------------------------------------------------\nDocument 2 (ID: INV-002):\nTitle: Invoice #12346\nType: invoice\nAmount: $69,300.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12346\n                Date: 2024-02-20\n                Client: TechStart Inc.\n\n                Products:\n                - Enterprise License (Annual): $50,000\n              ...\n--------------------------------------------------\nDocument 3 (ID: INV-003):\nTitle: Invoice #12347\nType: invoice\nAmount: $214,500.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12347\n                Date: 2024-03-01\n                Client: Global Corp\n\n                Services:\n                - Annual Subscription: $120,000\n                - Premiu...\n--------------------------------------------------\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "5d3dbee1-892d-41b9-b172-f81ca5710799",
+            "tool_call_id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "Here are the titles of each invoice:\n\n1. **Invoice #12345** - Document ID: INV-001\n2. **Invoice #12346** - Document ID: INV-002\n3. **Invoice #12347** - Document ID: INV-003\n\nIf you need more details about any specific invoice, feel free to ask!",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 72,
+                "prompt_tokens": 1331,
+                "total_tokens": 1403,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1024
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHUPm5nKuArpBLUkTPVnVoKUeeFh",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-48fd-7c92-9546-6aa6db92cfe2-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1331,
+              "output_tokens": 72,
+              "total_tokens": 1403,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1024
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "What is the total for INV-004?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "2d927a8b-522f-4052-ba22-8244aa9b23e6"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 17,
+                "prompt_tokens": 1516,
+                "total_tokens": 1533,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_d9a8f17212",
+              "id": "chatcmpl-DeHUuZ8L0WeaZmR1ipcQoxs3GtAPE",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-c16b-7b72-93da-b5a88d5b304d-0",
+            "tool_calls": [
+              {
+                "name": "document_reader",
+                "args": {
+                  "doc_id": "INV-004"
+                },
+                "id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1516,
+              "output_tokens": 17,
+              "total_tokens": 1533,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Document with ID INV-004 not found.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_reader",
+            "id": "99481978-eb76-4ffa-9993-46147a59f96a",
+            "tool_call_id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "It seems there is no document with the ID \"INV-004\" in the system. Please check the ID and try again, or let me know if there's anything else I can assist you with.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 41,
+                "prompt_tokens": 1550,
+                "total_tokens": 1591,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1408
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_d9a8f17212",
+              "id": "chatcmpl-DeHUvfM09SWVyvek75cilUMaKfQXW",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-c616-7222-809a-03da23c5e40b-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1550,
+              "output_tokens": 41,
+              "total_tokens": 1591,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1408
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "expression": "5 + 3",
+          "result": 8.0,
+          "explanation": "To find the sum of 5 and 3, we simply add the two numbers together.",
+          "units": null,
+          "timestamp": "2023-10-06T12:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics",
+        "document_search",
+        "document_search",
+        "document_search",
+        "document_reader"
+      ],
+      "session_id": "0166a1e1-f10c-4969-bcac-3bb1799dfc35",
+      "user_id": "Rob",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent",
+        "classify_intent",
+        "qa_agent",
+        "classify_intent",
+        "calculation_agent"
+      ]
+    },
+    {
+      "user_input": "What are the titles of invoices that have a total of less than $100",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+        },
+        {
+          "content": "List all document names",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 676,
+              "total_tokens": 686,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 676,
+            "output_tokens": 10,
+            "total_tokens": 686,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+          "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 20,
+              "prompt_tokens": 788,
+              "total_tokens": 808,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 788,
+            "output_tokens": 20,
+            "total_tokens": 808,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+          "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 45,
+              "prompt_tokens": 824,
+              "total_tokens": 869,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "all documents",
+                "search_type": "all"
+              },
+              "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 824,
+            "output_tokens": 45,
+            "total_tokens": 869,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+          "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 42,
+              "prompt_tokens": 888,
+              "total_tokens": 930,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 888,
+            "output_tokens": 42,
+            "total_tokens": 930,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "5f0c7b24-33c3-4f5b-8061-22ae1be04762"
+        },
+        {
+          "content": "List the titles of each invoice",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "3f0ffe1d-4c0e-4643-b114-92ca95647b08"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 25,
+              "prompt_tokens": 1046,
+              "total_tokens": 1071,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHUOOTtP1xHKICFfGc0yIXUWfmvz",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-4237-7362-8a03-531fecb60a5b-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "invoices",
+                "search_type": "type",
+                "doc_type": "invoice"
+              },
+              "id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1046,
+            "output_tokens": 25,
+            "total_tokens": 1071,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Found 3 document(s):\n\nDocument 1 (ID: INV-001):\nTitle: Invoice #12345\nType: invoice\nRelevance Score: 1.00\nPreview: \n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n            ...\n--------------------------------------------------\nDocument 2 (ID: INV-002):\nTitle: Invoice #12346\nType: invoice\nAmount: $69,300.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12346\n                Date: 2024-02-20\n                Client: TechStart Inc.\n\n                Products:\n                - Enterprise License (Annual): $50,000\n              ...\n--------------------------------------------------\nDocument 3 (ID: INV-003):\nTitle: Invoice #12347\nType: invoice\nAmount: $214,500.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12347\n                Date: 2024-03-01\n                Client: Global Corp\n\n                Services:\n                - Annual Subscription: $120,000\n                - Premiu...\n--------------------------------------------------\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "5d3dbee1-892d-41b9-b172-f81ca5710799",
+          "tool_call_id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "Here are the titles of each invoice:\n\n1. **Invoice #12345** - Document ID: INV-001\n2. **Invoice #12346** - Document ID: INV-002\n3. **Invoice #12347** - Document ID: INV-003\n\nIf you need more details about any specific invoice, feel free to ask!",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 72,
+              "prompt_tokens": 1331,
+              "total_tokens": 1403,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1024
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_8aed6409fd",
+            "id": "chatcmpl-DeHUPm5nKuArpBLUkTPVnVoKUeeFh",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-48fd-7c92-9546-6aa6db92cfe2-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1331,
+            "output_tokens": 72,
+            "total_tokens": 1403,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1024
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations. This includes trivial operations such as add, subtract, multiply and divide.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "1acd022e-9b82-4779-9e4c-a3f42195518e"
+        },
+        {
+          "content": "What is the total for INV-004?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "2d927a8b-522f-4052-ba22-8244aa9b23e6"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 17,
+              "prompt_tokens": 1516,
+              "total_tokens": 1533,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_d9a8f17212",
+            "id": "chatcmpl-DeHUuZ8L0WeaZmR1ipcQoxs3GtAPE",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-c16b-7b72-93da-b5a88d5b304d-0",
+          "tool_calls": [
+            {
+              "name": "document_reader",
+              "args": {
+                "doc_id": "INV-004"
+              },
+              "id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1516,
+            "output_tokens": 17,
+            "total_tokens": 1533,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Document with ID INV-004 not found.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_reader",
+          "id": "99481978-eb76-4ffa-9993-46147a59f96a",
+          "tool_call_id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "It seems there is no document with the ID \"INV-004\" in the system. Please check the ID and try again, or let me know if there's anything else I can assist you with.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 41,
+              "prompt_tokens": 1550,
+              "total_tokens": 1591,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1408
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_d9a8f17212",
+            "id": "chatcmpl-DeHUvfM09SWVyvek75cilUMaKfQXW",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e166d-c616-7222-809a-03da23c5e40b-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1550,
+            "output_tokens": 41,
+            "total_tokens": 1591,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1408
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations. This includes trivial operations such as add, subtract, multiply and divide.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "d959ad63-8c10-42b2-88d1-e7cdef986f94"
+        },
+        {
+          "content": "What are the titles of invoices that have a total of less than $100",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "9572da38-2a16-46ba-b86d-380e3528b3af"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 36,
+              "prompt_tokens": 1710,
+              "total_tokens": 1746,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_d9a8f17212",
+            "id": "chatcmpl-DeHcHZ9Qf2jFPshPDKfqxHQxEkAhQ",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1674-b8c7-7a02-98e6-f6a1d478fdba-0",
+          "tool_calls": [
+            {
+              "name": "document_search",
+              "args": {
+                "query": "invoices under $100",
+                "search_type": "type",
+                "doc_type": "invoice",
+                "comparison": "under",
+                "amount": 100
+              },
+              "id": "call_IgqeljkaCwSk85s1FiF3yKn1",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1710,
+            "output_tokens": 36,
+            "total_tokens": 1746,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "No documents found matching your search criteria.",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_search",
+          "id": "a5526241-b7ce-4786-82ed-56ff1f6ac697",
+          "tool_call_id": "call_IgqeljkaCwSk85s1FiF3yKn1",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "There are no invoices with a total amount of less than $100 in the system. If you have any other queries or need further assistance, feel free to ask!",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 34,
+              "prompt_tokens": 1762,
+              "total_tokens": 1796,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1664
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_d9a8f17212",
+            "id": "chatcmpl-DeHcIR40BGQtlR84OD6AMOZCmeL1x",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019e1674-bdc8-7f50-834d-8bf166c7d039-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1762,
+            "output_tokens": 34,
+            "total_tokens": 1796,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1664
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "calculation",
+        "confidence": 0.95,
+        "reasoning": "The user is asking for titles of invoices with a total amount less than $100. This requires checking the amounts on the invoices and comparing them to the specified threshold, which involves a calculation or numerical comparison."
+      },
+      "next_step": "end",
+      "conversation_summary": "The user inquired about the titles of invoices, and the assistant provided the titles of three invoices: Invoice #12345, Invoice #12346, and Invoice #12347. The user also asked about the total for an invoice with ID INV-004, but it was not found in the system. Additionally, the user asked for invoices with a total of less than $100, but none were found.",
+      "active_documents": [
+        "INV-001",
+        "INV-002",
+        "INV-003"
+      ],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations. This includes trivial operations such as add, subtract, multiply and divide.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "d959ad63-8c10-42b2-88d1-e7cdef986f94"
+          },
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "fe12c010-1bda-4686-98c0-43b28efbe1cf"
+          },
+          {
+            "content": "List all document names",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "a8f73ab5-67f5-4e8b-b556-53f7d0088e87"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 676,
+                "total_tokens": 686,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTkZZYxHYQsc9IxJ8Yx1fkr1CeF",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-a4d9-7b22-b6dd-603e3e650805-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 676,
+              "output_tokens": 10,
+              "total_tokens": 686,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "64ccd1e2-1ff2-478a-8227-59826f7de343",
+            "tool_call_id": "call_rHz8XsyaxMWg9sRt7N8xu4wH",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 20,
+                "prompt_tokens": 788,
+                "total_tokens": 808,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTnvUGmJ0wQGxLid78qWKcX6c6Z",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b1ec-7a21-b251-8514683b6ced-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 788,
+              "output_tokens": 20,
+              "total_tokens": 808,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "5ada5d20-4f40-4cf3-8560-3aaf2456557c",
+            "tool_call_id": "call_PFEX6gCogbo4Spv8czH5AHXq",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "It seems there was an issue retrieving the document names. Let me try again to get the list of all document names.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 45,
+                "prompt_tokens": 824,
+                "total_tokens": 869,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTo09zGcfkXu1vd2DVDJYZZFC5k",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-b695-78b2-8647-468ffa6d3e61-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "all documents",
+                  "search_type": "all"
+                },
+                "id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 824,
+              "output_tokens": 45,
+              "total_tokens": 869,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "337ce5c0-2f46-4bc8-8db4-00eab7c70e49",
+            "tool_call_id": "call_SfI57f0sHxUQglqOgPo3xpfB",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "I'm currently unable to retrieve the list of document names. There might be a technical issue with accessing the document database. Please try again later or let me know if there's anything else I can assist you with.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 42,
+                "prompt_tokens": 888,
+                "total_tokens": 930,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHTr3dw9TEsGVRd9aXare8cGrmt1",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166c-c163-7211-9b14-1d4f138fbba3-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 888,
+              "output_tokens": 42,
+              "total_tokens": 930,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "5f0c7b24-33c3-4f5b-8061-22ae1be04762"
+          },
+          {
+            "content": "List the titles of each invoice",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "3f0ffe1d-4c0e-4643-b114-92ca95647b08"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 25,
+                "prompt_tokens": 1046,
+                "total_tokens": 1071,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHUOOTtP1xHKICFfGc0yIXUWfmvz",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-4237-7362-8a03-531fecb60a5b-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "invoices",
+                  "search_type": "type",
+                  "doc_type": "invoice"
+                },
+                "id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1046,
+              "output_tokens": 25,
+              "total_tokens": 1071,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Found 3 document(s):\n\nDocument 1 (ID: INV-001):\nTitle: Invoice #12345\nType: invoice\nRelevance Score: 1.00\nPreview: \n                Invoice #12345\n                Date: 2024-01-15\n                Client: Acme Corporation\n\n                Services Rendered:\n                - Consulting Services: $5,000\n            ...\n--------------------------------------------------\nDocument 2 (ID: INV-002):\nTitle: Invoice #12346\nType: invoice\nAmount: $69,300.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12346\n                Date: 2024-02-20\n                Client: TechStart Inc.\n\n                Products:\n                - Enterprise License (Annual): $50,000\n              ...\n--------------------------------------------------\nDocument 3 (ID: INV-003):\nTitle: Invoice #12347\nType: invoice\nAmount: $214,500.00\nRelevance Score: 1.00\nPreview: \n                Invoice #12347\n                Date: 2024-03-01\n                Client: Global Corp\n\n                Services:\n                - Annual Subscription: $120,000\n                - Premiu...\n--------------------------------------------------\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "5d3dbee1-892d-41b9-b172-f81ca5710799",
+            "tool_call_id": "call_6TzpfPWUHgj6M11xHEGiOp4e",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "Here are the titles of each invoice:\n\n1. **Invoice #12345** - Document ID: INV-001\n2. **Invoice #12346** - Document ID: INV-002\n3. **Invoice #12347** - Document ID: INV-003\n\nIf you need more details about any specific invoice, feel free to ask!",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 72,
+                "prompt_tokens": 1331,
+                "total_tokens": 1403,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1024
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_8aed6409fd",
+              "id": "chatcmpl-DeHUPm5nKuArpBLUkTPVnVoKUeeFh",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-48fd-7c92-9546-6aa6db92cfe2-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1331,
+              "output_tokens": 72,
+              "total_tokens": 1403,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1024
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "You are an expert mathematician that enjoys using their calculator to solve calculation problems.\n\nYour approach:\n1. Determine the document that must be retrieved and retrieve it using the document reader tool\n2. Determine the mathematical expression to calculate based on the user's input\n3. Use the calculator tool to perform the calculation\n\nGuidelines: \n1. Make sure to use the calculator tool for ALL calculations. This includes trivial operations such as add, subtract, multiply and divide.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "1acd022e-9b82-4779-9e4c-a3f42195518e"
+          },
+          {
+            "content": "What is the total for INV-004?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "2d927a8b-522f-4052-ba22-8244aa9b23e6"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 17,
+                "prompt_tokens": 1516,
+                "total_tokens": 1533,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_d9a8f17212",
+              "id": "chatcmpl-DeHUuZ8L0WeaZmR1ipcQoxs3GtAPE",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-c16b-7b72-93da-b5a88d5b304d-0",
+            "tool_calls": [
+              {
+                "name": "document_reader",
+                "args": {
+                  "doc_id": "INV-004"
+                },
+                "id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1516,
+              "output_tokens": 17,
+              "total_tokens": 1533,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Document with ID INV-004 not found.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_reader",
+            "id": "99481978-eb76-4ffa-9993-46147a59f96a",
+            "tool_call_id": "call_lTL6JIu5TnvXhgLQYQL1i4v8",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "It seems there is no document with the ID \"INV-004\" in the system. Please check the ID and try again, or let me know if there's anything else I can assist you with.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 41,
+                "prompt_tokens": 1550,
+                "total_tokens": 1591,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1408
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_d9a8f17212",
+              "id": "chatcmpl-DeHUvfM09SWVyvek75cilUMaKfQXW",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e166d-c616-7222-809a-03da23c5e40b-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1550,
+              "output_tokens": 41,
+              "total_tokens": 1591,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1408
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "What are the titles of invoices that have a total of less than $100",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "9572da38-2a16-46ba-b86d-380e3528b3af"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 36,
+                "prompt_tokens": 1710,
+                "total_tokens": 1746,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_d9a8f17212",
+              "id": "chatcmpl-DeHcHZ9Qf2jFPshPDKfqxHQxEkAhQ",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1674-b8c7-7a02-98e6-f6a1d478fdba-0",
+            "tool_calls": [
+              {
+                "name": "document_search",
+                "args": {
+                  "query": "invoices under $100",
+                  "search_type": "type",
+                  "doc_type": "invoice",
+                  "comparison": "under",
+                  "amount": 100
+                },
+                "id": "call_IgqeljkaCwSk85s1FiF3yKn1",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1710,
+              "output_tokens": 36,
+              "total_tokens": 1746,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "No documents found matching your search criteria.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_search",
+            "id": "a5526241-b7ce-4786-82ed-56ff1f6ac697",
+            "tool_call_id": "call_IgqeljkaCwSk85s1FiF3yKn1",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "There are no invoices with a total amount of less than $100 in the system. If you have any other queries or need further assistance, feel free to ask!",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 34,
+                "prompt_tokens": 1762,
+                "total_tokens": 1796,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1664
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_d9a8f17212",
+              "id": "chatcmpl-DeHcIR40BGQtlR84OD6AMOZCmeL1x",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e1674-bdc8-7f50-834d-8bf166c7d039-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1762,
+              "output_tokens": 34,
+              "total_tokens": 1796,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1664
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "expression": "5 + 3",
+          "result": 8.0,
+          "explanation": "To find the sum of 5 and 3, we simply add the two numbers together.",
+          "units": null,
+          "timestamp": "2023-10-06T12:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics",
+        "document_search",
+        "document_search",
+        "document_search",
+        "document_reader",
+        "document_search"
+      ],
+      "session_id": "0166a1e1-f10c-4969-bcac-3bb1799dfc35",
+      "user_id": "Rob",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent",
+        "classify_intent",
+        "qa_agent",
+        "classify_intent",
+        "calculation_agent",
+        "classify_intent",
+        "calculation_agent"
+      ]
+    }
+  ],
+  "document_context": [
+    "INV-001",
+    "INV-002",
+    "INV-003"
+  ],
+  "created_at": "2026-05-11T10:44:31.494471",
+  "last_updated": "2026-05-11T10:53:34.565353"
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "timestamp": "2026-05-11T10:20:10.679544",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:20:12.009695",
+    "tool_name": "calculator_tool",
+    "input": {
+      "expression": "20000 + 2000"
+    },
+    "output": "22000"
+  },
+  {
+    "timestamp": "2026-05-11T10:21:14.369725",
+    "tool_name": "document_search",
+    "input": {
+      "query": "contracts",
+      "search_type": "type",
+      "doc_type": "contract",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 1}"
+  },
+  {
+    "timestamp": "2026-05-11T10:21:15.700510",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "CON-001"
+    },
+    "output": "{'found': True, 'doc_type': 'contract'}"
+  }
+]

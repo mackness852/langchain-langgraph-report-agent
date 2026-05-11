@@ -78,17 +78,20 @@ def create_calculator_tool(logger: ToolLogger):
         Returns:
             str: An answer to your mathemetical expression
         """
-        allowed_chars = "1234567890+-*/."
-        safe_expression = "".join(char for char in expression if char in allowed_chars)
-
+        allowed_chars = "1234567890+-*/. "
         try:
+            illegal_chars = "".join(char for char in expression if char not in allowed_chars)
+            if illegal_chars:
+                raise Exception(f"Illegal chars present: {illegal_chars}")
+
+            safe_expression = "".join(char for char in expression if char in allowed_chars)
             result = eval(safe_expression)
             logger.log_tool_use("calculator_tool", {"expression": expression}, result)
         except Exception as e:
             logger.log_tool_use("calculator_tool", {"expression": expression}, f"Failed to evaluate this expression: {e}")
             raise Exception(f"Evaluation for {expression} failed", e)
         
-        return result
+        return str(result)
     return calculator_tool
 
 

@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-05-11T10:32:11.223026",
+    "tool_name": "document_statistics",
+    "input": {},
+    "output": "{'stats': {'total_documents': 5, 'documents_with_amounts': 4, 'total_amount': 466250.0, 'average_amount': 116562.5, 'document_types': {'invoice': 3, 'contract': 1, 'claim': 1}, 'min_amount': 2450.0, 'max_amount': 214500.0}}"
+  },
+  {
+    "timestamp": "2026-05-11T10:32:12.493053",
+    "tool_name": "document_search",
+    "input": {
+      "query": "invoices",
+      "search_type": "type",
+      "doc_type": "invoice",
+      "min_amount": null,
+      "max_amount": null,
+      "comparison": null,
+      "amount": null
+    },
+    "output": "{'results_count': 3}"
+  },
+  {
+    "timestamp": "2026-05-11T10:32:13.852341",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-001"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:32:13.853111",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-003"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:32:13.853620",
+    "tool_name": "document_reader",
+    "input": {
+      "doc_id": "INV-002"
+    },
+    "output": "{'found': True, 'doc_type': 'invoice'}"
+  },
+  {
+    "timestamp": "2026-05-11T10:32:23.885431",
+    "tool_name": "calculator_tool",
+    "input": {
+      "expression": "20000 + 69300 + 214500"
+    },
+    "output": "303800"
+  },
+  {
+    "timestamp": "2026-05-11T10:32:29.341498",
+    "tool_name": "calculator_tool",
+    "input": {
+      "expression": "303800 % 5"
+    },
+    "output": "Failed to evaluate this expression: Illegal chars present: %"
+  }
+]
